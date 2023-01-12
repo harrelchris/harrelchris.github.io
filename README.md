@@ -1,5 +1,9 @@
 # Blog
 
+https://harrelchris.github.io/
+
+## Commands
+
 Run local server with drafts
 
 ```shell
