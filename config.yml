@@ -2,3 +2,67 @@ baseURL: https://harrelchris.github.io/
 languageCode: en-us
 title: HarrelChris
 theme: "PaperMod"
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+enableEmoji: true
+pygmentsUseClasses: true
+
+params:
+    comments: true
+    defaultTheme: auto
+    description: "Chris Harrel's Blog"
+    displayFullLangName: true
+    env: "production"
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowPostNavLinks: true
+    ShowReadingTime: true
+    ShowRssButtonInSectionTermList: true
+    ShowToc: true
+
+    homeInfoParams:
+        Title: "Chris Harrel's Blog"
+
+    socialIcons:
+      - name: "github"
+        url: "https://github.com/harrelchris"
+      - name: "linkedin"
+        url: "https://www.linkedin.com/in/harrelchris/"
+      - name: "RSS"
+        url: "index.xml"
+
+    editPost:
+        URL: "https://github.com/harrelchris/harrelchris.github.io/blob/main/content"
+        Text: "Suggest Changes"
+        appendFilePath: true
+
+    # analytics:
+    #     google:
+    #         SiteVerificationTag: "XYZabc"
+
+    assets:
+        disableHLJS: true
+
+languages:
+    en:
+        languageName: "English"
+        weight: 1
+        taxonomies:
+          category: categories
+          tag: tags
+          series: series
+        menu:
+            main:
+                - name: Archive
+                  url: archives
+                - name: Search
+                  url: search
+                - name: Tags
+                  url: tags
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
